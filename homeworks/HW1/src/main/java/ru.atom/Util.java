@@ -42,7 +42,7 @@ public class Util {
     public static long sum(int[] values) {
 
         long[] longValues = Arrays.stream(values).mapToLong(x -> x).toArray();
-        return Arrays.stream(LongValues).sum();
+        return Arrays.stream(longValues).sum();
     }
 
 
