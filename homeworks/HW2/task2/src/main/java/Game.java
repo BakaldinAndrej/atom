@@ -12,7 +12,7 @@ public class Game {
     public String word;
 
     //инициализация игры со словарем
-    public Game(List<String> words) {
+    public game(List<String> words) {
         this.words = words;
     }
 
@@ -22,7 +22,7 @@ public class Game {
     }
 
     //загадать слово
-    public void SetSecretWord (String word){
+    public void setSecretWord (String word){
         this.word = word;
     }
 
