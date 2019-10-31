@@ -6,7 +6,7 @@ public class MainTest {
     @Test
     public void testBulls() {
         Game game = new Game(null);
-        game.SetSecretWord("abbc");
+        game.setSecretWord("abbc");
         int result = game.calcBulls("xxba");
         Assert.assertEquals(1, result);
 
@@ -20,7 +20,7 @@ public class MainTest {
     @Test
     public void testCows() {
         Game game = new Game(null);
-        game.SetSecretWord("abbc");
+        game.setSecretWord("abbc");
         int result = game.calcCows("xxba");
         Assert.assertEquals(2, result);
 
