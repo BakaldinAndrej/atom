@@ -20,6 +20,15 @@ public class ChatClientTest {
     private static String MY_MESSAGE_TO_CHAT = "SOMEONE_KILL_ME";
 
     @Test
+    public void register() throws IOException {
+        Response response = ChatClient.register(MY_NAME_IN_CHAT, MY_PASSWORD);
+        System.out.println("[" + response + "]");
+        String body = response.body().string();
+        System.out.println();
+        Assert.assertEquals(200, response.code());
+    }
+
+    @Test
     public void login() throws IOException {
         Response response = ChatClient.login(MY_NAME_IN_CHAT, MY_PASSWORD);
         System.out.println("[" + response + "]");
