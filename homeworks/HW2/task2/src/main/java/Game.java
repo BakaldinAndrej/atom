@@ -22,7 +22,7 @@ public class Game {
     }
 
     //загадать слово
-    public void setSecretWord (String word){
+    public void setSecretWord(String word) {
         this.word = word;
     }
 

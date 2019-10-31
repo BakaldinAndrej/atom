@@ -24,7 +24,7 @@ dependencies {
 }
 
 checkstyle {
-    ignoreFailures = true
+    ignoreFailures = false
     toolVersion = '7.5'
     configFile = new File('../../../config/checkstyle/checkstyle.xml')
 }
