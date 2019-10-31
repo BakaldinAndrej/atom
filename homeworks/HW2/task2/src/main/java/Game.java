@@ -22,7 +22,7 @@ public class Game {
     }
 
     //загадать слово
-    public void SetSecretWord (String word){
+    public void SetSecretWord(String word) {
         this.word = word;
     }
 
@@ -77,7 +77,7 @@ public class Game {
             }
             System.out.println("Тестовое слово - " + word);
             System.out.println("Быки: " + calcBulls(guess));
-            System.out.println("Коровы: " + calcCows(guess));
+            System.out.println("Коровы: " + (calcCows(guess) - calcBulls(guess)));
             losses++;
         }
         System.out.println("Вы проиграли");

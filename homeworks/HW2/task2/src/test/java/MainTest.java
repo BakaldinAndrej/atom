@@ -1,7 +1,5 @@
-import org.junit.Test;
 import org.junit.Assert;
-
-import static org.junit.Assert.*;
+import org.junit.Test;
 
 public class MainTest {
 
